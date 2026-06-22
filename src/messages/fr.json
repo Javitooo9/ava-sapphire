@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "catalogue": "Catalogue",
+    "sapphire": "Le Saphir",
+    "expertise": "Expertise",
+    "contact": "Contact",
+    "rdv": "Prendre RDV"
+  },
+  "hero": {
+    "title": "AVA SAPPHIRE",
+    "subtitle": "Saphirs d'exception, directement de la mine",
+    "cta": "Découvrir notre catalogue",
+    "cta2": "Prendre rendez-vous"
+  },
+  "about": {
+    "title": "Notre histoire",
+    "description": "AVA SAPPHIRE est une société spécialisée dans la sélection, la taille et la commercialisation de saphirs d'exception. De la mine à votre écrin, nous garantissons la traçabilité et l'authenticité de chaque pierre.",
+    "mining": "Extraction",
+    "cutting": "Taille",
+    "expertise": "Expertise"
+  },
+  "catalogue": {
+    "title": "Notre Catalogue",
+    "subtitle": "Des saphirs classés par couleur, sélectionnés à la source",
+    "filter": "Filtrer par couleur",
+    "all": "Toutes",
+    "noProducts": "Aucun produit dans cette catégorie",
+    "details": "Voir le détail",
+    "weight": "Poids",
+    "origin": "Origine",
+    "color": "Couleur",
+    "clarity": "Clarté",
+    "cut": "Taille",
+    "certificate": "Certificat",
+    "contact": "Demander un prix",
+    "colors": {
+      "blue": "Bleu",
+      "pink": "Rose",
+      "yellow": "Jaune",
+      "white": "Blanc",
+      "green": "Vert",
+      "orange": "Orange",
+      "purple": "Violet",
+      "black": "Noir"
+    }
+  },
+  "sapphire": {
+    "title": "Le monde du saphir",
+    "subtitle": "Tout ce que vous devez savoir sur cette pierre précieuse",
+    "what": {
+      "title": "Qu'est-ce qu'un saphir ?",
+      "text": "Le saphir est une variété de corindon (Al₂O₃) qui doit sa couleur aux impuretés de titane et de fer. Il est l'une des quatre pierres précieuses reconnues avec le diamant, l'émeraude et le rubis."
+    },
+    "colors": {
+      "title": "Les couleurs du saphir",
+      "text": "Bien que le bleu reste la couleur la plus connue, le saphir existe dans presque toutes les couleurs : rose, jaune, blanc, vert, orange (padparadscha)..."
+    },
+    "origins": {
+      "title": "Les grandes origines",
+      "text": "Le Cachemire, la Birmanie, le Sri Lanka, Madagascar et l'Australie sont parmi les origines les plus prestigieuses. Chaque terroir confère au saphir ses caractéristiques uniques."
+    },
+    "quality": {
+      "title": "Comment évaluer un saphir ?",
+      "text": "Les 4C s'appliquent aussi aux saphirs : Couleur (Color), Pureté (Clarity), Taille (Cut) et Poids (Carat). La couleur est le critère prédominant."
+    }
+  },
+  "expertise": {
+    "title": "Service d'expertise",
+    "subtitle": "Faites expertiser vos pierres par nos gemmologues certifiés",
+    "description": "Vous possédez un saphir ou une pierre précieuse dont vous souhaitez connaître la valeur ou l'authenticité ? Nos experts gemmologues vous accompagnent.",
+    "services": {
+      "identification": {
+        "title": "Identification",
+        "desc": "Détermination de la nature de votre pierre"
+      },
+      "valuation": {
+        "title": "Valorisation",
+        "desc": "Estimation de la valeur marchande"
+      },
+      "certificate": {
+        "title": "Certificat",
+        "desc": "Délivrance d'un certificat d'authenticité"
+      }
+    },
+    "cta": "Prendre rendez-vous pour une expertise"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Notre équipe vous répond sous 24h",
+    "name": "Nom complet",
+    "email": "Email",
+    "phone": "Téléphone",
+    "subject": "Sujet",
+    "message": "Message",
+    "send": "Envoyer",
+    "success": "Message envoyé ! Nous vous répondrons sous 24h.",
+    "error": "Une erreur est survenue. Veuillez réessayer.",
+    "subjects": {
+      "info": "Information produit",
+      "expertise": "Demande d'expertise",
+      "b2b": "Partenariat B2B",
+      "other": "Autre"
+    }
+  },
+  "rdv": {
+    "title": "Prendre rendez-vous",
+    "subtitle": "Choisissez votre profil",
+    "b2b": {
+      "title": "Professionnel / B2B",
+      "desc": "Joailliers, bijoutiers, investisseurs — discutons de vos besoins en approvisionnement",
+      "cta": "RDV Professionnel"
+    },
+    "client": {
+      "title": "Particulier",
+      "desc": "Découvrez nos pierres en personne ou en visioconférence",
+      "cta": "RDV Particulier"
+    }
+  },
+  "newsletter": {
+    "title": "Restez informé",
+    "subtitle": "Nouvelles arrivées, actualités gemmologiques, événements",
+    "placeholder": "Votre email",
+    "subscribe": "S'inscrire",
+    "success": "Inscription confirmée !",
+    "error": "Une erreur est survenue."
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité"
+  }
+}

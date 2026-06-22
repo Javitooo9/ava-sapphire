@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "home": "Home",
+    "catalogue": "Catalogue",
+    "sapphire": "Sapphire",
+    "expertise": "Expertise",
+    "contact": "Contact",
+    "rdv": "Book a meeting"
+  },
+  "hero": {
+    "title": "AVA SAPPHIRE",
+    "subtitle": "Exceptional sapphires, straight from the mine",
+    "cta": "Explore our catalogue",
+    "cta2": "Book an appointment"
+  },
+  "about": {
+    "title": "Our story",
+    "description": "AVA SAPPHIRE specialises in the selection, cutting and trading of exceptional sapphires. From mine to jewel case, we guarantee the traceability and authenticity of every stone.",
+    "mining": "Mining",
+    "cutting": "Cutting",
+    "expertise": "Expertise"
+  },
+  "catalogue": {
+    "title": "Our Catalogue",
+    "subtitle": "Sapphires sorted by colour, selected at source",
+    "filter": "Filter by colour",
+    "all": "All",
+    "noProducts": "No products in this category",
+    "details": "View details",
+    "weight": "Weight",
+    "origin": "Origin",
+    "color": "Colour",
+    "clarity": "Clarity",
+    "cut": "Cut",
+    "certificate": "Certificate",
+    "contact": "Request a price",
+    "colors": {
+      "blue": "Blue",
+      "pink": "Pink",
+      "yellow": "Yellow",
+      "white": "White",
+      "green": "Green",
+      "orange": "Orange",
+      "purple": "Purple",
+      "black": "Black"
+    }
+  },
+  "sapphire": {
+    "title": "The world of sapphire",
+    "subtitle": "Everything you need to know about this precious stone",
+    "what": {
+      "title": "What is a sapphire?",
+      "text": "Sapphire is a variety of corundum (Al₂O₃) that owes its colour to titanium and iron impurities. It is one of the four recognised precious stones alongside diamond, emerald and ruby."
+    },
+    "colors": {
+      "title": "Sapphire colours",
+      "text": "Although blue is the most well-known colour, sapphire exists in almost every colour: pink, yellow, white, green, orange (padparadscha)..."
+    },
+    "origins": {
+      "title": "Major origins",
+      "text": "Kashmir, Burma, Sri Lanka, Madagascar and Australia are among the most prestigious origins. Each terroir gives the sapphire its unique characteristics."
+    },
+    "quality": {
+      "title": "How to evaluate a sapphire?",
+      "text": "The 4Cs also apply to sapphires: Colour, Clarity, Cut and Carat weight. Colour is the predominant criterion."
+    }
+  },
+  "expertise": {
+    "title": "Expertise service",
+    "subtitle": "Have your stones assessed by our certified gemmologists",
+    "description": "Do you own a sapphire or precious stone whose value or authenticity you wish to verify? Our expert gemmologists are here to help.",
+    "services": {
+      "identification": {
+        "title": "Identification",
+        "desc": "Determining the nature of your stone"
+      },
+      "valuation": {
+        "title": "Valuation",
+        "desc": "Market value estimation"
+      },
+      "certificate": {
+        "title": "Certificate",
+        "desc": "Issuance of an authenticity certificate"
+      }
+    },
+    "cta": "Book an expertise appointment"
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Our team replies within 24 hours",
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send",
+    "success": "Message sent! We will reply within 24 hours.",
+    "error": "An error occurred. Please try again.",
+    "subjects": {
+      "info": "Product information",
+      "expertise": "Expertise request",
+      "b2b": "B2B partnership",
+      "other": "Other"
+    }
+  },
+  "rdv": {
+    "title": "Book an appointment",
+    "subtitle": "Choose your profile",
+    "b2b": {
+      "title": "Professional / B2B",
+      "desc": "Jewellers, investors — let's discuss your sourcing needs",
+      "cta": "Professional meeting"
+    },
+    "client": {
+      "title": "Individual",
+      "desc": "Discover our stones in person or via video call",
+      "cta": "Individual meeting"
+    }
+  },
+  "newsletter": {
+    "title": "Stay informed",
+    "subtitle": "New arrivals, gemmological news, events",
+    "placeholder": "Your email",
+    "subscribe": "Subscribe",
+    "success": "Subscription confirmed!",
+    "error": "An error occurred."
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "legal": "Legal notice",
+    "privacy": "Privacy policy"
+  }
+}

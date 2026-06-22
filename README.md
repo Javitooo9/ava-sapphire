@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ava Sapphire — Site Vitrine
 
-## Getting Started
+Site vitrine premium pour une société de négoce de saphirs d'exception.
 
-First, run the development server:
+## Stack technique
+
+- **Next.js 14** (App Router) + TypeScript
+- **Tailwind CSS** — design sombre, couleur or `#C4A35A`
+- **next-intl** — multilingue FR/EN
+- **Supabase** — base de données, stockage images, auth admin
+
+## Structure des pages publiques
+
+| Route | Description |
+|-------|-------------|
+| `/fr` `/en` | Page d'accueil avec hero + présentation |
+| `/fr/catalogue` | Catalogue filtrable par couleur |
+| `/fr/catalogue/[id]` | Fiche produit détaillée |
+| `/fr/sapphire` | Page pédagogique "Le monde du saphir" |
+| `/fr/expertise` | Service d'expertise gemmologique |
+| `/fr/contact` | Formulaire de contact |
+| `/fr/rdv` | Prise de RDV (B2B / Particulier) via Calendly |
+
+## Back-office admin
+
+URL : `/admin/dashboard`
+
+| Route | Description |
+|-------|-------------|
+| `/admin/login` | Connexion admin |
+| `/admin/dashboard` | Tableau de bord |
+| `/admin/products` | Gestion des produits |
+| `/admin/newsletter` | Envoi de newsletters |
+
+## Installation
 
 ```bash
+npm install
+cp .env.local.example .env.local
+# Remplir les variables dans .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Configuration Supabase
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Créer un projet sur [supabase.com](https://supabase.com)
+2. Exécuter `supabase-schema.sql` dans l'éditeur SQL
+3. Copier les clés dans `.env.local`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Liens RDV à configurer
 
-## Learn More
+Dans `src/app/[locale]/rdv/page.tsx`, remplacer les liens Calendly par vos vrais liens.
 
-To learn more about Next.js, take a look at the following resources:
+## Photos terrain
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Placer vos photos dans `/public/images/` et les référencer dans les pages.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Déploiement recommandé
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[Vercel](https://vercel.com) — déploiement automatique depuis GitHub.
