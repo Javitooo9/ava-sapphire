@@ -3,11 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import { Search, TrendingUp, Award } from "lucide-react";
 
-export default async function ExpertisePage({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
+export default async function ExpertisePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   return <ExpertiseContent locale={locale} />;
@@ -23,33 +19,32 @@ function ExpertiseContent({ locale }: { locale: string }) {
   ] as const;
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white py-16 px-4">
+    <div className="min-h-screen bg-[#FAFAF8] py-16 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-light tracking-wider mb-3">{t("title")}</h1>
-          <div className="w-16 h-px bg-[#C4A35A] mx-auto mb-4" />
-          <p className="text-gray-400 text-lg mb-6">{t("subtitle")}</p>
-          <p className="text-gray-300 max-w-2xl mx-auto">{t("description")}</p>
+          <p className="text-[#A8894A] text-xs tracking-[0.3em] uppercase mb-3 font-medium">Services</p>
+          <h1 className="text-4xl font-light tracking-wider text-[#1C1C1E] mb-3">{t("title")}</h1>
+          <div className="w-10 h-px bg-[#A8894A] mx-auto mb-4" />
+          <p className="text-[#6B6867] mb-4">{t("subtitle")}</p>
+          <p className="text-[#6B6867] text-sm max-w-2xl mx-auto leading-relaxed">{t("description")}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#E8E5E0] mb-14">
           {services.map(({ key, Icon }) => (
-            <div
-              key={key}
-              className="text-center p-8 border border-white/10 hover:border-[#C4A35A]/50 transition-colors rounded"
-            >
-              <Icon className="w-8 h-8 text-[#C4A35A] mx-auto mb-4" />
-              <h3 className="text-white font-semibold mb-2">
+            <div key={key} className="text-center p-8 bg-white hover:bg-[#F2F0EB] transition-colors">
+              <Icon className="w-6 h-6 text-[#A8894A] mx-auto mb-4" />
+              <h3 className="text-[#1C1C1E] text-sm font-medium tracking-wide mb-2">
                 {t(`services.${key}.title`)}
               </h3>
-              <p className="text-gray-400 text-sm">{t(`services.${key}.desc`)}</p>
+              <p className="text-[#6B6867] text-xs leading-relaxed">{t(`services.${key}.desc`)}</p>
             </div>
           ))}
         </div>
 
-        {/* Process */}
-        <div className="border border-white/10 p-8 rounded mb-10">
-          <h2 className="text-xl font-light text-[#C4A35A] mb-6">Comment se déroule une expertise ?</h2>
+        <div className="border border-[#E8E5E0] p-8 bg-white mb-10">
+          <h2 className="text-base font-medium text-[#1B3A5C] tracking-wide mb-6">
+            Comment se déroule une expertise ?
+          </h2>
           <ol className="space-y-4">
             {[
               "Prise de rendez-vous par formulaire ou téléphone",
@@ -58,8 +53,8 @@ function ExpertiseContent({ locale }: { locale: string }) {
               "Rédaction du rapport et remise du certificat",
               "Entretien de restitution (présentiel ou visio)",
             ].map((step, i) => (
-              <li key={i} className="flex items-start gap-4 text-gray-300">
-                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#C4A35A]/20 text-[#C4A35A] text-xs flex items-center justify-center font-semibold">
+              <li key={i} className="flex items-start gap-4 text-[#6B6867] text-sm">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#1B3A5C]/8 text-[#1B3A5C] text-xs flex items-center justify-center font-medium border border-[#1B3A5C]/20">
                   {i + 1}
                 </span>
                 {step}
@@ -69,10 +64,8 @@ function ExpertiseContent({ locale }: { locale: string }) {
         </div>
 
         <div className="text-center">
-          <Link
-            href={`/${locale}/rdv`}
-            className="inline-flex items-center gap-2 bg-[#C4A35A] text-black px-8 py-3 font-semibold hover:bg-[#d4b36a] transition-colors"
-          >
+          <Link href={`/${locale}/rdv`}
+            className="inline-flex items-center gap-2 bg-[#1B3A5C] text-white px-8 py-3 text-sm font-medium hover:bg-[#243f63] transition-colors">
             {t("cta")}
           </Link>
         </div>
