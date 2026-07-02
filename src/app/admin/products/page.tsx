@@ -8,7 +8,7 @@ export default function AdminProductsPage() {
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-2xl font-light tracking-wider text-[#1C1C1E]">Produits</h1>
         <Link href="/admin/products/new"
-          className="flex items-center gap-2 bg-[#1B3A5C] text-white px-4 py-2 text-sm font-medium hover:bg-[#243f63] transition-colors">
+          className="flex items-center gap-2 bg-[#954C2E] text-white px-4 py-2 text-sm font-medium hover:bg-[#7A3D25] transition-colors">
           <Plus className="w-4 h-4" /> Ajouter
         </Link>
       </div>
@@ -40,7 +40,7 @@ export default function AdminProductsPage() {
                 <td className="px-5 py-3 text-[#6B6867]">{p.certificate || "—"}</td>
                 <td className="px-5 py-3">
                   <div className="flex items-center gap-2">
-                    <button className="text-[#6B6867] hover:text-[#1B3A5C] transition-colors p-1">
+                    <button className="text-[#6B6867] hover:text-[#954C2E] transition-colors p-1">
                       <Pencil className="w-4 h-4" />
                     </button>
                     <button className="text-[#6B6867] hover:text-red-500 transition-colors p-1">

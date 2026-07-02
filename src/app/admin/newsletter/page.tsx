@@ -13,7 +13,7 @@ export default function AdminNewsletterPage() {
     setStatus("sent");
   }
 
-  const inputClass = "w-full bg-white border border-[#E8E5E0] text-[#1C1C1E] px-4 py-3 text-sm focus:outline-none focus:border-[#1B3A5C] transition-colors";
+  const inputClass = "w-full bg-white border border-[#E8E5E0] text-[#1C1C1E] px-4 py-3 text-sm focus:outline-none focus:border-[#954C2E] transition-colors";
 
   return (
     <div>
@@ -21,7 +21,7 @@ export default function AdminNewsletterPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="border border-[#E8E5E0] bg-white p-6">
-          <h2 className="text-sm font-medium text-[#1B3A5C] tracking-wide mb-6 uppercase">
+          <h2 className="text-sm font-medium text-[#954C2E] tracking-wide mb-6 uppercase">
             Envoyer une newsletter
           </h2>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -38,7 +38,7 @@ export default function AdminNewsletterPage() {
             {status === "sent" && <p className="text-green-600 text-sm">Envoyée avec succès !</p>}
             {status === "error" && <p className="text-red-500 text-sm">Erreur lors de l&apos;envoi.</p>}
             <button type="submit" disabled={status === "sending"}
-              className="flex items-center gap-2 bg-[#1B3A5C] text-white px-6 py-2.5 text-sm font-medium hover:bg-[#243f63] transition-colors disabled:opacity-50">
+              className="flex items-center gap-2 bg-[#954C2E] text-white px-6 py-2.5 text-sm font-medium hover:bg-[#7A3D25] transition-colors disabled:opacity-50">
               <Send className="w-4 h-4" />
               {status === "sending" ? "Envoi..." : "Envoyer à tous les abonnés"}
             </button>
@@ -46,7 +46,7 @@ export default function AdminNewsletterPage() {
         </div>
 
         <div className="border border-[#E8E5E0] bg-white p-6">
-          <h2 className="text-sm font-medium text-[#1B3A5C] tracking-wide mb-6 uppercase">Abonnés</h2>
+          <h2 className="text-sm font-medium text-[#954C2E] tracking-wide mb-6 uppercase">Abonnés</h2>
           <p className="text-[#6B6867] text-sm">
             Les abonnés apparaîtront ici une fois Supabase connecté.
           </p>

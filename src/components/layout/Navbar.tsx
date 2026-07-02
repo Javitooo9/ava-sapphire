@@ -22,6 +22,8 @@ export default function Navbar() {
 
   const otherLocale = locale === "fr" ? "en" : "fr";
   const switchHref = pathname.replace(`/${locale}`, `/${otherLocale}`);
+  const localeFlags: Record<string, string> = { fr: "🇫🇷", en: "🇬🇧" };
+  const localeNames: Record<string, string> = { fr: "Français", en: "English" };
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-[#FAFAF8]/95 backdrop-blur border-b border-[#E8E5E0]">
@@ -44,7 +46,7 @@ export default function Navbar() {
                 className={cn(
                   "text-xs tracking-[0.15em] uppercase transition-colors",
                   pathname === link.href
-                    ? "text-[#1B3A5C] font-medium"
+                    ? "text-[#954C2E] font-medium"
                     : "text-[#6B6867] hover:text-[#1C1C1E]"
                 )}
               >
@@ -63,9 +65,11 @@ export default function Navbar() {
             </Link>
             <Link
               href={switchHref}
-              className="text-xs text-[#6B6867] hover:text-[#1C1C1E] border border-[#E8E5E0] px-2 py-1 transition-colors"
+              title={localeNames[otherLocale]}
+              aria-label={`Switch to ${localeNames[otherLocale]}`}
+              className="text-lg leading-none hover:scale-110 transition-transform"
             >
-              {otherLocale.toUpperCase()}
+              {localeFlags[otherLocale]}
             </Link>
           </div>
 
@@ -102,9 +106,10 @@ export default function Navbar() {
           <Link
             href={switchHref}
             onClick={() => setIsOpen(false)}
-            className="block mt-3 text-center text-xs text-[#6B6867]"
+            className="flex items-center justify-center gap-2 mt-3 text-center text-xs text-[#6B6867]"
           >
-            Switch to {otherLocale.toUpperCase()}
+            <span className="text-base leading-none">{localeFlags[otherLocale]}</span>
+            {localeNames[otherLocale]}
           </Link>
         </div>
       )}

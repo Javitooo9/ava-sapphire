@@ -22,7 +22,7 @@ export default function ContactPage() {
     if (res.ok) form.reset();
   }
 
-  const inputClass = "w-full bg-white border border-[#E8E5E0] text-[#1C1C1E] px-4 py-3 text-sm focus:outline-none focus:border-[#1B3A5C] transition-colors placeholder:text-[#A8A09A]";
+  const inputClass = "w-full bg-white border border-[#E8E5E0] text-[#1C1C1E] px-4 py-3 text-sm focus:outline-none focus:border-[#954C2E] transition-colors placeholder:text-[#A8A09A]";
 
   return (
     <div className="min-h-screen bg-[#FAFAF8] py-16 px-4">
@@ -54,7 +54,7 @@ export default function ContactPage() {
           <div>
             <label className="block text-xs text-[#6B6867] uppercase tracking-widest mb-2">{t("subject")} *</label>
             <select name="subject" required
-              className="w-full bg-white border border-[#E8E5E0] text-[#1C1C1E] px-4 py-3 text-sm focus:outline-none focus:border-[#1B3A5C] transition-colors">
+              className="w-full bg-white border border-[#E8E5E0] text-[#1C1C1E] px-4 py-3 text-sm focus:outline-none focus:border-[#954C2E] transition-colors">
               <option value="">Choisir...</option>
               <option value="info">{t("subjects.info")}</option>
               <option value="expertise">{t("subjects.expertise")}</option>
@@ -77,7 +77,7 @@ export default function ContactPage() {
           )}
 
           <button type="submit" disabled={status === "loading"}
-            className="w-full bg-[#1B3A5C] text-white py-3 text-sm font-medium hover:bg-[#243f63] transition-colors disabled:opacity-50 flex items-center justify-center gap-2">
+            className="w-full bg-[#954C2E] text-white py-3 text-sm font-medium hover:bg-[#7A3D25] transition-colors disabled:opacity-50 flex items-center justify-center gap-2">
             <Send className="w-4 h-4" />
             {status === "loading" ? "Envoi..." : t("send")}
           </button>

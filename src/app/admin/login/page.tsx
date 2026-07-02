@@ -37,16 +37,16 @@ export default function AdminLoginPage() {
           <div>
             <label className="block text-xs text-[#6B6867] uppercase tracking-widest mb-2">Email</label>
             <input name="email" type="email" required
-              className="w-full bg-white border border-[#E8E5E0] text-[#1C1C1E] px-4 py-3 text-sm focus:outline-none focus:border-[#1B3A5C] transition-colors" />
+              className="w-full bg-white border border-[#E8E5E0] text-[#1C1C1E] px-4 py-3 text-sm focus:outline-none focus:border-[#954C2E] transition-colors" />
           </div>
           <div>
             <label className="block text-xs text-[#6B6867] uppercase tracking-widest mb-2">Mot de passe</label>
             <input name="password" type="password" required
-              className="w-full bg-white border border-[#E8E5E0] text-[#1C1C1E] px-4 py-3 text-sm focus:outline-none focus:border-[#1B3A5C] transition-colors" />
+              className="w-full bg-white border border-[#E8E5E0] text-[#1C1C1E] px-4 py-3 text-sm focus:outline-none focus:border-[#954C2E] transition-colors" />
           </div>
           {error && <p className="text-red-500 text-sm">{error}</p>}
           <button type="submit"
-            className="w-full bg-[#1B3A5C] text-white py-3 text-sm font-medium hover:bg-[#243f63] transition-colors">
+            className="w-full bg-[#954C2E] text-white py-3 text-sm font-medium hover:bg-[#7A3D25] transition-colors">
             Se connecter
           </button>
         </form>

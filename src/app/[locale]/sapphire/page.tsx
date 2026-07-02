@@ -29,10 +29,10 @@ function SapphireContent() {
 
         <div className="space-y-4">
           {sections.map(({ key, emoji }) => (
-            <div key={key} className="border border-[#E8E5E0] p-8 bg-white hover:border-[#1B3A5C]/20 transition-colors">
+            <div key={key} className="border border-[#E8E5E0] p-8 bg-white hover:border-[#954C2E]/20 transition-colors">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-xl">{emoji}</span>
-                <h2 className="text-base font-medium tracking-wide text-[#1B3A5C]">
+                <h2 className="text-base font-medium tracking-wide text-[#954C2E]">
                   {t(`${key}.title`)}
                 </h2>
               </div>
@@ -43,7 +43,7 @@ function SapphireContent() {
 
         {/* Spectre des couleurs */}
         <div className="mt-12 p-8 border border-[#E8E5E0] bg-white">
-          <h2 className="text-base font-medium text-center text-[#1B3A5C] tracking-wide mb-8">
+          <h2 className="text-base font-medium text-center text-[#954C2E] tracking-wide mb-8">
             Le spectre des couleurs
           </h2>
           <div className="flex justify-center gap-5 flex-wrap">

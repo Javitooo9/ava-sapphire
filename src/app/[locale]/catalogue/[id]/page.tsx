@@ -53,7 +53,7 @@ export default async function ProductPage({ params }: { params: Promise<{ locale
             </div>
 
             <Link href={`/${locale}/contact`}
-              className="inline-flex items-center gap-2 bg-[#1B3A5C] text-white px-8 py-3 text-sm font-medium hover:bg-[#243f63] transition-colors justify-center">
+              className="inline-flex items-center gap-2 bg-[#954C2E] text-white px-8 py-3 text-sm font-medium hover:bg-[#7A3D25] transition-colors justify-center">
               <Mail className="w-4 h-4" /> Demander un prix
             </Link>
           </div>

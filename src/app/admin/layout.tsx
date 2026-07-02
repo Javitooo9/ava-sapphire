@@ -5,7 +5,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   return (
     <div className="min-h-screen bg-[#F2F0EB] flex">
       {/* Sidebar */}
-      <aside className="w-56 bg-[#1B3A5C] flex flex-col fixed h-full">
+      <aside className="w-56 bg-[#954C2E] flex flex-col fixed h-full">
         <div className="p-5 border-b border-white/10 flex items-center gap-2">
           <Gem className="w-4 h-4 text-[#A8894A]" />
           <span className="text-white font-medium text-xs tracking-[0.2em] uppercase">Admin</span>

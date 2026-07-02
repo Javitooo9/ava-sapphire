@@ -19,7 +19,7 @@ function HomeContent({ locale }: { locale: string }) {
       <section className="relative min-h-[88vh] flex items-center justify-center bg-[#F2F0EB]">
         <div className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: "radial-gradient(circle at 20% 50%, #1B3A5C22 0%, transparent 60%), radial-gradient(circle at 80% 50%, #A8894A22 0%, transparent 60%)",
+            backgroundImage: "radial-gradient(circle at 20% 50%, #954C2E22 0%, transparent 60%), radial-gradient(circle at 80% 50%, #A8894A22 0%, transparent 60%)",
           }}
         />
         <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
@@ -35,11 +35,11 @@ function HomeContent({ locale }: { locale: string }) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href={`/${locale}/catalogue`}
-              className="bg-[#1B3A5C] text-white px-8 py-3 text-sm font-medium tracking-wide hover:bg-[#243f63] transition-colors flex items-center justify-center gap-2">
+              className="bg-[#954C2E] text-white px-8 py-3 text-sm font-medium tracking-wide hover:bg-[#7A3D25] transition-colors flex items-center justify-center gap-2">
               {t("cta")} <ArrowRight className="w-4 h-4" />
             </Link>
             <Link href={`/${locale}/rdv`}
-              className="border border-[#1B3A5C] text-[#1B3A5C] px-8 py-3 text-sm font-medium tracking-wide hover:bg-[#1B3A5C] hover:text-white transition-colors">
+              className="border border-[#954C2E] text-[#954C2E] px-8 py-3 text-sm font-medium tracking-wide hover:bg-[#954C2E] hover:text-white transition-colors">
               {t("cta2")}
             </Link>
           </div>
@@ -98,12 +98,12 @@ function HomeContent({ locale }: { locale: string }) {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-4 bg-[#1B3A5C] text-center">
+      <section className="py-24 px-4 bg-[#954C2E] text-center">
         <Gem className="w-6 h-6 text-[#A8894A] mx-auto mb-5" />
         <h2 className="text-3xl font-light text-white tracking-wider mb-4">
           Découvrez notre collection
         </h2>
-        <p className="text-blue-200 mb-10 max-w-md mx-auto text-sm leading-relaxed">
+        <p className="text-white mb-10 max-w-md mx-auto text-sm leading-relaxed">
           Des saphirs sélectionnés à la source, classés par couleur, disponibles sur demande.
         </p>
         <Link href={`/${locale}/catalogue`}

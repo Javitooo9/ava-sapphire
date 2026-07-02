@@ -42,7 +42,7 @@ function ExpertiseContent({ locale }: { locale: string }) {
         </div>
 
         <div className="border border-[#E8E5E0] p-8 bg-white mb-10">
-          <h2 className="text-base font-medium text-[#1B3A5C] tracking-wide mb-6">
+          <h2 className="text-base font-medium text-[#954C2E] tracking-wide mb-6">
             Comment se déroule une expertise ?
           </h2>
           <ol className="space-y-4">
@@ -54,7 +54,7 @@ function ExpertiseContent({ locale }: { locale: string }) {
               "Entretien de restitution (présentiel ou visio)",
             ].map((step, i) => (
               <li key={i} className="flex items-start gap-4 text-[#6B6867] text-sm">
-                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#1B3A5C]/8 text-[#1B3A5C] text-xs flex items-center justify-center font-medium border border-[#1B3A5C]/20">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#954C2E]/8 text-[#954C2E] text-xs flex items-center justify-center font-medium border border-[#954C2E]/20">
                   {i + 1}
                 </span>
                 {step}
@@ -65,7 +65,7 @@ function ExpertiseContent({ locale }: { locale: string }) {
 
         <div className="text-center">
           <Link href={`/${locale}/rdv`}
-            className="inline-flex items-center gap-2 bg-[#1B3A5C] text-white px-8 py-3 text-sm font-medium hover:bg-[#243f63] transition-colors">
+            className="inline-flex items-center gap-2 bg-[#954C2E] text-white px-8 py-3 text-sm font-medium hover:bg-[#7A3D25] transition-colors">
             {t("cta")}
           </Link>
         </div>

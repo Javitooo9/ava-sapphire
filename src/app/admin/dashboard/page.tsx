@@ -8,9 +8,9 @@ export default function DashboardPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
         {[
-          { label: "Produits actifs", value: DEMO_PRODUCTS.length, icon: Package, color: "text-[#1B3A5C]" },
+          { label: "Produits actifs", value: DEMO_PRODUCTS.length, icon: Package, color: "text-[#954C2E]" },
           { label: "Abonnés newsletter", value: "—", icon: Users, color: "text-[#A8894A]" },
-          { label: "Messages reçus", value: "—", icon: Mail, color: "text-[#1B3A5C]" },
+          { label: "Messages reçus", value: "—", icon: Mail, color: "text-[#954C2E]" },
         ].map(({ label, value, icon: Icon, color }) => (
           <div key={label} className="border border-[#E8E5E0] p-6 bg-white">
             <Icon className={`w-5 h-5 ${color} mb-3`} />
@@ -22,7 +22,7 @@ export default function DashboardPage() {
 
       <div className="border border-[#E8E5E0] bg-white">
         <div className="px-6 py-4 border-b border-[#E8E5E0]">
-          <h2 className="text-sm font-medium text-[#1B3A5C] tracking-wide">Derniers produits</h2>
+          <h2 className="text-sm font-medium text-[#954C2E] tracking-wide">Derniers produits</h2>
         </div>
         <table className="w-full text-sm">
           <thead className="bg-[#F2F0EB]">

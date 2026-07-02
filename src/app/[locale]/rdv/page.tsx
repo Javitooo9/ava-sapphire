@@ -34,7 +34,7 @@ function RdvContent() {
             href="https://calendly.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#1B3A5C] text-white px-10 py-3 text-sm font-medium hover:bg-[#243f63] transition-colors"
+            className="inline-block bg-[#954C2E] text-white px-10 py-3 text-sm font-medium hover:bg-[#7A3D25] transition-colors"
           >
             Réserver un créneau
           </a>
