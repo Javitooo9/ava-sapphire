@@ -23,3 +23,35 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), Georgia, serif;
 }
+
+@keyframes scroll-reel {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-1 * (85vw + 1.5rem) * 2)); }
+}
+
+@media (min-width: 768px) {
+  @keyframes scroll-reel {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-1 * (45vw + 1.5rem) * 2)); }
+  }
+}
+
+@media (min-width: 1024px) {
+  @keyframes scroll-reel {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-1 * (38vw + 1.5rem) * 2)); }
+  }
+}
+
+.reel-track {
+  animation: scroll-reel 18s linear infinite;
+}
+
+.reel-track:hover {
+  animation-play-state: paused;
+}
+
+/* Empêche le flash blanc au chargement des images Next.js */
+img[data-nimg] {
+  background: transparent;
+}

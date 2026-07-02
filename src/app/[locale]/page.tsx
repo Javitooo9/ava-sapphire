@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import { ArrowRight, Gem, Mountain, Scissors } from "lucide-react";
+import { FeaturedStones } from "@/components/home/FeaturedStones";
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -16,10 +17,10 @@ function HomeContent({ locale }: { locale: string }) {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[88vh] flex items-center justify-center bg-[#F2F0EB]">
-        <div className="absolute inset-0 opacity-30"
+      <section className="relative min-h-[60vh] flex items-center justify-center" style={{ background: "linear-gradient(160deg, #F7F3EE 0%, #EDE8E0 40%, #F5F0E8 100%)" }}>
+        <div className="absolute inset-0"
           style={{
-            backgroundImage: "radial-gradient(circle at 20% 50%, #954C2E22 0%, transparent 60%), radial-gradient(circle at 80% 50%, #A8894A22 0%, transparent 60%)",
+            backgroundImage: "radial-gradient(circle at 15% 60%, #C9A96E18 0%, transparent 55%), radial-gradient(circle at 85% 35%, #A8894A14 0%, transparent 55%), radial-gradient(circle at 50% 100%, #E8E0D410 0%, transparent 50%)",
           }}
         />
         <div className="relative z-10 text-center px-4 max-w-3xl mx-auto">
@@ -45,6 +46,8 @@ function HomeContent({ locale }: { locale: string }) {
           </div>
         </div>
       </section>
+
+      <FeaturedStones locale={locale} />
 
       {/* About */}
       <section className="py-24 px-4 bg-[#FAFAF8]">
@@ -73,27 +76,6 @@ function HomeContent({ locale }: { locale: string }) {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Photos terrain */}
-      <section className="py-24 px-4 bg-[#F2F0EB]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[#A8894A] text-xs tracking-[0.3em] uppercase mb-3 font-medium">Terrain</p>
-            <h2 className="text-3xl font-light tracking-wider text-[#1C1C1E]">Sur le terrain</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {["Mining", "Cutting", "Stones"].map((label) => (
-              <div key={label}
-                className="aspect-square bg-[#E8E5E0] flex items-center justify-center text-[#6B6867] text-xs tracking-widest uppercase">
-                📷 Photo {label}
-              </div>
-            ))}
-          </div>
-          <p className="text-center text-[#A8894A]/60 text-xs mt-4">
-            Remplacer par vos photos dans /public/images/
-          </p>
         </div>
       </section>
 
